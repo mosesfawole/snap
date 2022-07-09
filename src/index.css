@@ -6,7 +6,7 @@
 
 body {
   font-family: "Epilogue", sans-serif;
-  background: hsl(0, 0%, 98%);
+
   color: hsl(0, 0%, 41%);
 }
 
@@ -20,9 +20,43 @@ body {
   border-radius: 15px;
 }
 
+/* The sidepanel menu */
+.sidepanel {
+  height: 100%; /* Specify a height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  right: 0;
+  background-color: white; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+}
+/* Position and style the close button (top right corner) */
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.overlay {
+  position: fixed; /* Sit on top of the page content */
+  /* display: none; Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+  z-index: 0; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
 .brand img {
   width: 90%;
 }
+
 @media (min-width: 768px) {
   .hero_text {
     width: 27%;

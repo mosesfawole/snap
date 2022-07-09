@@ -1,7 +1,16 @@
-import React from "react";
+import { useState } from "react";
+import Company from "./Company";
 import Example from "./Example";
-
 const Header = () => {
+  const [menu, setMenu] = useState(false);
+
+  const handleMenu = () => {
+    setMenu(!menu);
+  };
+
+  const handleClose = () => {
+    setMenu(!menu);
+  };
   return (
     <div className="md:p-4">
       {/* Desktop View */}
@@ -44,56 +53,44 @@ const Header = () => {
             />
           </svg>
         </div>
-        <div className="hamburger flex ">
+        <div onClick={handleMenu} className={menu ? "hidden" : "flex"}>
           <svg width="32" height="18" xmlns="http://www.w3.org/2000/svg">
             <g fill="#151515" fillRule="evenodd">
               <path d="M0 0h32v2H0zM0 8h32v2H0zM0 16h32v2H0z" />
             </g>
           </svg>
         </div>
-        <div className="close hidden">
-          <svg width="26" height="26" xmlns="http://www.w3.org/2000/svg">
-            <g fill="#151515" fillRule="evenodd">
-              <path d="m2.393.98 22.628 22.628-1.414 1.414L.979 2.395z" />
-              <path d="M.98 23.607 23.609.979l1.414 1.414L2.395 25.021z" />
-            </g>
-          </svg>
-        </div>
-        <div className="items hidden">
-          <ul>
-            <li>Features</li>
-            <li>
-              <span>
-                <img src="../images/icon-todo.svg" alt="" />
-              </span>
-            </li>
-            <li>
-              <span>
-                <img src="../images/icon-calendar" alt="" />
-              </span>
-            </li>
-            <li>
-              <span>
-                <img src="../images/icon-reminders.svg" alt="" />
-              </span>
-            </li>
-            <li>
-              <span>
-                <img src="../images/icon-planning.svg" alt="" />
-              </span>
-            </li>
-            <li>Company</li>
-            <li>History</li>
-            <li>Our Team</li>
-            <li>Blog</li>
+        {/* <div className={menu ? "overlay" : "hidden"}></div> */}
+        <div className={menu ? "overlay" : "hidden"}></div>
+        <div id="menu" className={menu ? "sidepanel py-12" : "hidden"}>
+          <div onClick={handleClose} className="closebtn p-4">
+            <svg width="26" height="26" xmlns="http://www.w3.org/2000/svg">
+              <g fill="#151515" fillRule="evenodd">
+                <path d="m2.393.98 22.628 22.628-1.414 1.414L.979 2.395z" />
+                <path d="M.98 23.607 23.609.979l1.414 1.414L2.395 25.021z" />
+              </g>
+            </svg>
+          </div>
+          <div className="items text-sm p-4 ">
+            <ul>
+              <li>
+                <Example />
+              </li>
 
-            <li>Careers</li>
-            <li>About</li>
-          </ul>
-        </div>
-        <div className="items2 hidden">
-          <button>Login</button>
-          <button>Register</button>
+              <li>
+                <Company />
+              </li>
+
+              <li className="py-3">Careers</li>
+              <li>About</li>
+            </ul>
+          </div>
+          <div className="md:hidden items2 flex flex-col p-4 ">
+            <button className="mb-4">Login</button>
+            <button className="py-2 rounded-2xl border-2 border-gray-400">
+              Register
+            </button>
+          </div>
         </div>
       </div>
     </div>
