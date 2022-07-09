@@ -6,4 +6,35 @@
 
 body {
   font-family: "Epilogue", sans-serif;
+  background: hsl(0, 0%, 98%);
+  color: hsl(0, 0%, 41%);
+}
+
+.hero_text h1 {
+  font-weight: 700;
+  color: hsl(0, 0%, 8%);
+}
+.hero_text .btn {
+  background: hsl(0, 0%, 8%);
+  color: hsl(0, 0%, 98%);
+  border-radius: 12px;
+}
+
+.brand img {
+  width: 90%;
+}
+@media (min-width: 768px) {
+  .hero_text {
+    width: 27%;
+  }
+  .hero-bg {
+    flex-basis: 40%;
+  }
+
+  .hero-bg img {
+    width: 80%;
+  }
+  .brand img {
+    width: 100%;
+  }
 }
