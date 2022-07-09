@@ -13,18 +13,18 @@ const Main = () => {
           <img src={HeroBgMobile} alt="" />
         </div>
 
-        <div className="hero_text mt-2 md:p-0 md:mt-40 ">
-          <h1 className="text-3xl  md:text-6xl mb-4 md:mb-10 text-center md:text-start">
+        <div className="hero_text mt-2 md:p-0 md:mt-20 ">
+          <h1 className="text-3xl text-center md:text-left md:text-6xl  md:mb-10 ">
             Make remote work
           </h1>
-          <div className="mb-4 md:mb-8 text-center md:text-start">
+          <div className="p-2 mb-2 md:mb-8 text-center md:text-start">
             <p>
               Get your team in sync, no matter your location. Streamline
               processes,create team rituals, and watch productivity soar.
             </p>
           </div>
           <div className="flex justify-center md:justify-start">
-            <button className="btn  py-3 px-6">Learn more</button>
+            <button className="btn py-3 px-6">Learn more</button>
           </div>{" "}
           <Footer />
         </div>

@@ -2,7 +2,7 @@ import { DataBiz, Audophile, Maker, Meet } from "../images/index";
 const Footer = () => {
   return (
     <div>
-      <div className="brands flex p-2  md:gap-8 mt-6 md:mt-20 ">
+      <div className="brands flex p-2  md:gap-8 mt-3 md:mt-20 ">
         <div className="brand">
           <img src={DataBiz} alt="" />
         </div>

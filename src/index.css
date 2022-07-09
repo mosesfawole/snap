@@ -6,8 +6,8 @@
 
 body {
   font-family: "Epilogue", sans-serif;
-
-  color: hsl(0, 0%, 41%);
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(0, 0%, 8%);
 }
 
 .hero_text h1 {
@@ -59,7 +59,7 @@ body {
 
 @media (min-width: 768px) {
   .hero_text {
-    width: 27%;
+    width: 30%;
   }
   .hero-bg {
     flex-basis: 40%;
@@ -70,5 +70,13 @@ body {
   }
   .brand img {
     width: 100%;
+  }
+  li {
+    opacity: 0.5;
+    cursor: pointer;
+  }
+  li:hover {
+    opacity: 1;
+    transition: all 0.5s ease;
   }
 }

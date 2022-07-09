@@ -10,11 +10,11 @@ export default function Example() {
   };
   return (
     <div className=" ">
-      <Menu as="div" className="relative inline-block text-left">
+      <Menu as="div" className="relative block text-left">
         <div>
           <Menu.Button
             onClick={handleClick}
-            className="inline-flex   py-2 text-sm font-medium "
+            className="flex text-sm font-medium "
           >
             Features
             {isActive ? (
@@ -39,7 +39,7 @@ export default function Example() {
           leaveFrom="transform opacity-100 scale-100"
           leaveTo="transform opacity-0 scale-95"
         >
-          <Menu.Items className="  mt-2 w-56  focus:outline-none">
+          <Menu.Items className="md:absolute  mt-2 md:p-2 md:px-4 md:w-40 md:bg-white md:shadow-xl md:rounded-xl  focus:outline-none">
             <div className=" ">
               <Menu.Item>
                 {({ active }) => (
