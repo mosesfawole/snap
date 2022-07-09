@@ -13,7 +13,7 @@ const Main = () => {
           <img src={HeroBgMobile} alt="" />
         </div>
 
-        <div className="hero_text p-4 mt-2 md:p-0 md:mt-40 ">
+        <div className="hero_text mt-2 md:p-0 md:mt-40 ">
           <h1 className="text-3xl  md:text-6xl mb-4 md:mb-10 text-center md:text-start">
             Make remote work
           </h1>
