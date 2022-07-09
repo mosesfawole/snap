@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Company from "./Company";
-import Example from "./Example";
+import Features from "./Features";
 const Header = () => {
   const [menu, setMenu] = useState(false);
 
@@ -26,16 +26,16 @@ const Header = () => {
             </svg>
           </div>
           {/* Menu */}
-          <div className="menu flex   ">
+          <div className="menu flex  cursor-pointer  ">
             <ul className="flex gap-10 text-sm">
-              <li className="">
-                <Example />
+              <li className="opacity-100">
+                <Features />
               </li>
               <li>
                 <Company />
               </li>
-              <li>Careers</li>
-              <li>About</li>
+              <li className="opacity-60 hover:opacity-100 ">Careers</li>
+              <li className="opacity-60 hover:opacity-100 ">About</li>
             </ul>
           </div>
         </div>
@@ -79,8 +79,8 @@ const Header = () => {
           </div>
           <div className="items text-sm p-4 ">
             <ul>
-              <li>
-                <Example />
+              <li className=" ">
+                <Features />
               </li>
 
               <li className="mt-2">

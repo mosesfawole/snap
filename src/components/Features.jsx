@@ -3,7 +3,7 @@ import { Fragment, useEffect, useRef, useState } from "react";
 import { ChevronDownIcon, ChevronUpIcon } from "@heroicons/react/solid";
 import { Todo, Calendar, Reminders, Planning } from "../images/index";
 
-export default function Example() {
+export default function Features() {
   const [isActive, setIsActive] = useState(false);
   const handleClick = () => {
     setIsActive(!isActive);
@@ -14,7 +14,7 @@ export default function Example() {
         <div>
           <Menu.Button
             onClick={handleClick}
-            className="flex text-sm font-medium "
+            className="flex text-sm font-medium opacity-60 hover:opacity-100  "
           >
             Features
             {isActive ? (
@@ -45,7 +45,7 @@ export default function Example() {
                 {({ active }) => (
                   <button
                     className={`${
-                      active ? "bg-violet-500 text-white" : "text-gray-900"
+                      active ? " " : "text-gray-900"
                     } group flex w-full items-center rounded-md px-4 py-2 text-sm`}
                   >
                     <img src={Todo} alt="" className="mr-4 w-4 " /> Todo List
@@ -56,7 +56,7 @@ export default function Example() {
                 {({ active }) => (
                   <button
                     className={`${
-                      active ? "bg-violet-500 text-white" : "text-gray-900"
+                      active ? " " : "text-gray-900"
                     } group flex w-full items-center rounded-md px-4 py-2 text-sm`}
                   >
                     <img src={Calendar} alt="" className="mr-4 w-4 " />
@@ -70,7 +70,7 @@ export default function Example() {
                 {({ active }) => (
                   <button
                     className={`${
-                      active ? "bg-violet-500 text-white" : "text-gray-900"
+                      active ? " " : "text-gray-900"
                     } group flex w-full items-center rounded-md px-4 py-2 text-sm`}
                   >
                     <img src={Reminders} alt="" className="mr-4 w-4 " />
@@ -82,7 +82,7 @@ export default function Example() {
                 {({ active }) => (
                   <button
                     className={`${
-                      active ? "bg-violet-500 text-white" : "text-gray-900"
+                      active ? " " : "text-gray-900"
                     } group flex w-full items-center rounded-md px-4 py-2 text-sm`}
                   >
                     <img src={Planning} alt="" className="mr-4 w-4 " />

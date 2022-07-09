@@ -71,12 +71,4 @@ body {
   .brand img {
     width: 100%;
   }
-  li {
-    opacity: 0.5;
-    cursor: pointer;
-  }
-  li:hover {
-    opacity: 1;
-    transition: all 0.5s ease;
-  }
 }

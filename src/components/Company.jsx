@@ -14,7 +14,7 @@ export default function Company() {
         <div>
           <Menu.Button
             onClick={handleClick}
-            className="flex text-sm font-medium "
+            className="flex text-sm font-medium opacity-60 hover:opacity-100 "
           >
             Company
             {isActive ? (
@@ -45,7 +45,7 @@ export default function Company() {
                 {({ active }) => (
                   <button
                     className={`${
-                      active ? "bg-violet-500 text-white" : "text-gray-900"
+                      active ? " " : "text-gray-900"
                     } group flex w-full items-center rounded-md px-4 py-2 text-sm`}
                   >
                     History
@@ -56,7 +56,7 @@ export default function Company() {
                 {({ active }) => (
                   <button
                     className={`${
-                      active ? "bg-violet-500 text-white" : "text-gray-900"
+                      active ? " " : "text-gray-900"
                     } group flex w-full items-center rounded-md px-4 py-2 text-sm`}
                   >
                     Our Team
@@ -67,7 +67,7 @@ export default function Company() {
                 {({ active }) => (
                   <button
                     className={`${
-                      active ? "bg-violet-500 text-white" : "text-gray-900"
+                      active ? " " : "text-gray-900"
                     } group flex w-full items-center rounded-md px-4 py-2 text-sm`}
                   >
                     Blog
