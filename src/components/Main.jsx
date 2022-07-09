@@ -13,11 +13,11 @@ const Main = () => {
           <img src={HeroBgMobile} alt="" />
         </div>
 
-        <div className="hero_text p-4 mt-10 md:p-0 md:mt-40 ">
-          <h1 className="text-3xl  md:text-6xl mb-10 text-center md:text-start">
+        <div className="hero_text p-4 mt-2 md:p-0 md:mt-40 ">
+          <h1 className="text-3xl  md:text-6xl mb-4 md:mb-10 text-center md:text-start">
             Make remote work
           </h1>
-          <div className="mb-8 text-center md:text-start">
+          <div className="mb-4 md:mb-8 text-center md:text-start">
             <p>
               Get your team in sync, no matter your location. Streamline
               processes,create team rituals, and watch productivity soar.

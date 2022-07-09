@@ -17,7 +17,7 @@ body {
 .hero_text .btn {
   background: hsl(0, 0%, 8%);
   color: hsl(0, 0%, 98%);
-  border-radius: 12px;
+  border-radius: 15px;
 }
 
 .brand img {

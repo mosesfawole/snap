@@ -3,7 +3,7 @@ import Example from "./Example";
 
 const Header = () => {
   return (
-    <div className="p-4">
+    <div className="md:p-4">
       {/* Desktop View */}
       <div className="menu-items hidden  md:flex p-4 justify-between items-center">
         <div className="menu-left flex gap-4  ">
