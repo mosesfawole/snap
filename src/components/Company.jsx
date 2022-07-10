@@ -1,7 +1,6 @@
 import { Menu, Transition } from "@headlessui/react";
-import { Fragment, useEffect, useRef, useState } from "react";
+import { Fragment, useState } from "react";
 import { ChevronDownIcon, ChevronUpIcon } from "@heroicons/react/solid";
-import { Todo, Calendar, Reminders, Planning } from "../images/index";
 
 export default function Company() {
   const [isActive, setIsActive] = useState(false);
