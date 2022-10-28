@@ -24,9 +24,10 @@ const Main = () => {
             </p>
           </div>
           <div className="flex mb-2 justify-center md:justify-start">
-            <button className="btn py-3 px-6">Learn more</button>
+            <button className="btn py-3  hover:bg-transparent hover:text-black hover:outline-[2px] px-6">
+              Learn more
+            </button>
           </div>{" "}
-          <Footer />
         </div>
       </div>
     </div>
